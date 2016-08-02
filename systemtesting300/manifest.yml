@@ -1,0 +1,7 @@
+---
+applications:
+- name: systemtesting300
+  memory: 128M
+  instances: 1
+  services:
+   - systemtesting300-mysql-0130770994
