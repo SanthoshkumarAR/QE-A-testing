@@ -1,0 +1,7 @@
+---
+applications:
+- name: systemtesting213
+  memory: 128M
+  instances: 1
+  services:
+   - systemtesting213-postgre-0123364774
