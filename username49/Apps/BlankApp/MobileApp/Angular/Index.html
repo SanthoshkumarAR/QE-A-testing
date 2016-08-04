@@ -1,0 +1,29 @@
+﻿<!-- THIS FILE IS THE SINGLE HTML FILE WHICH IS DISPLAYED AS SOON AS THE APPLICATION IS LAUNCHED. IT CONTAINS
+ ALL THE UI COMPONENTS REQUIRED FOR THE Blank APPLICATION-->
+<!doctype html>
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="Default">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+    <title>Blank App</title>
+    <!-- SCROLLS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"><!-- load bootstrap -->
+    <link rel="stylesheet" href="./Content/default.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="./Scripts/defaultController.js"></script> <!-- load up our services -->
+    <script src="./Scripts/defaultService.js"></script> <!-- load up our services -->
+</head>
+<!-- SET THE CONTROLLER -->
+<body>
+    <div class='navContent'>
+        <img style='position:absolute;margin: 12px 10px;' src="./Images/logo.png" />
+        <h1 class="heading">Angular</h1>
+    </div>
+    <div class="container" ng-controller="DefaultController">
+        
+    </div>
+</body>
+</html>
+
