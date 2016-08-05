@@ -1,0 +1,7 @@
+---
+applications:
+- name: springrest1
+  memory: 800M
+  instances: 1
+  services:
+   - springrest1-mongodb-0372851878
