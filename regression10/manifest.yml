@@ -1,0 +1,6 @@
+---
+applications:
+- name: regression10
+  memory: 128M
+  instances: 1
+
