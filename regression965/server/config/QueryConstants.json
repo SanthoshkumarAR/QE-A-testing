@@ -1,0 +1,4 @@
+{
+    "CREATE_TABLE_QUERY": "CREATE TABLE IF NOT EXISTS tableName (id VARCHAR(36),columnName VARCHAR(255))",
+    "STORE":"seneca-postgres-store"
+}

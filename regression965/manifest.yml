@@ -1,0 +1,7 @@
+---
+applications:
+- name: regression965
+  memory: 128M
+  instances: 1
+  services:
+   - regression965-postgre-0657240646
