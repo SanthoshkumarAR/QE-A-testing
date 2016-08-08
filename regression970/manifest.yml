@@ -1,0 +1,7 @@
+---
+applications:
+- name: regression970
+  memory: 128M
+  instances: 1
+  services:
+   - regression970-mysql-0657920579
