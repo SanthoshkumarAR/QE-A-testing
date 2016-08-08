@@ -1,0 +1,7 @@
+---
+applications:
+- name: regression967
+  memory: 128M
+  instances: 1
+  services:
+   - regression967-cassandra-0657605156
