@@ -1,0 +1,7 @@
+---
+applications:
+- name: regression964
+  memory: 128M
+  instances: 1
+  services:
+   - regression963-postgre-0656983644
