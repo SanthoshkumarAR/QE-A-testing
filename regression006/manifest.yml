@@ -1,0 +1,7 @@
+---
+applications:
+- name: regression006
+  memory: 128M
+  instances: 1
+  services:
+   - regression006-redis-0738523618
