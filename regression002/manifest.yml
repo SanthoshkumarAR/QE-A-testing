@@ -1,0 +1,6 @@
+---
+applications:
+- name: regression002
+  memory: 128M
+  instances: 1
+
