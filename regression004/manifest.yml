@@ -1,0 +1,7 @@
+---
+applications:
+- name: regression004
+  memory: 128M
+  instances: 1
+  services:
+   - regression004-mysql-0738099393
