@@ -1,0 +1,7 @@
+---
+applications:
+- name: regression2000
+  memory: 1024M
+  instances: 1
+  services:
+   - regression2000-mongodb-0723751926
