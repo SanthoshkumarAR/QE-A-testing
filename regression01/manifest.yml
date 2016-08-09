@@ -1,0 +1,7 @@
+---
+applications:
+- name: regression01
+  memory: 128M
+  instances: 1
+  services:
+   - regression01-mongodb-0738646353
