@@ -1,0 +1,7 @@
+---
+applications:
+- name: regression007
+  memory: 128M
+  instances: 1
+  services:
+   - regression09-mongodb-0738733867
