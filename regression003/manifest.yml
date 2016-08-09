@@ -1,0 +1,9 @@
+---
+applications:
+- name: regression003
+  memory: 128M
+  instances: 1
+  services:
+   - regression003-mongodb-0737116391
+  env:
+   - NODE_ENV: cloud-foundry
