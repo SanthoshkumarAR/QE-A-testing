@@ -1,0 +1,7 @@
+---
+applications:
+- name: a1b12
+  memory: 128M
+  instances: 1
+  services:
+   - a1b12-mysql-0806329444
