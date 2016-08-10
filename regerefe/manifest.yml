@@ -1,0 +1,6 @@
+---
+applications:
+- name: regerefe
+  memory: 128M
+  instances: 1
+
