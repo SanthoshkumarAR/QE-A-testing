@@ -1,0 +1,7 @@
+---
+applications:
+- name: reg1
+  memory: 128M
+  instances: 1
+  services:
+   - reg1-postgre-0811642911

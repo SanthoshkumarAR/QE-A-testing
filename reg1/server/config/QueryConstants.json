@@ -1,0 +1,4 @@
+{
+    "CREATE_TABLE_QUERY": "CREATE TABLE IF NOT EXISTS ToDo (id VARCHAR(36),task_name VARCHAR(255))",
+    "STORE":"seneca-postgres-store"
+}
