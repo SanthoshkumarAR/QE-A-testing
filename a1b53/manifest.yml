@@ -1,0 +1,7 @@
+---
+applications:
+- name: a1b53
+  memory: 128M
+  instances: 1
+  services:
+   - a1b53-redis-0808430410
