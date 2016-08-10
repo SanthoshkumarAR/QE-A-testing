@@ -1,0 +1,7 @@
+---
+applications:
+- name: a1b52
+  memory: 128M
+  instances: 1
+  services:
+   - a1b52-postgre-0808326578
