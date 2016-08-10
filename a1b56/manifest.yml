@@ -1,0 +1,7 @@
+---
+applications:
+- name: a1b56
+  memory: 128M
+  instances: 1
+  services:
+   - a1b56-postgre-0809063381
