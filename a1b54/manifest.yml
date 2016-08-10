@@ -1,0 +1,6 @@
+---
+applications:
+- name: a1b54
+  memory: 128M
+  instances: 1
+
