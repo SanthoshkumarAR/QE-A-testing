@@ -1,0 +1,9 @@
+---
+applications:
+- name: a1b51
+  memory: 128M
+  instances: 1
+  services:
+   - a1b51-mongodb-0807674536
+  env:
+   - NODE_ENV: cloud-foundry
