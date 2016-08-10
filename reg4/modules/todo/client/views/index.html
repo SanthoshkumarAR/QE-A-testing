@@ -1,0 +1,85 @@
+<!-- THIS FILE IS THE SINGLE HTML FILE WHICH IS DISPLAYED AS SOON AS THE APPLICATION IS LAUNCHED. IT CONTAINS
+ ALL THE UI COMPONENTS REQUIRED FOR THE TO DO APPLICATION-->
+
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="toDo">
+<head>
+  <!-- META -->
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/modules/todo/client/css/reset.css">
+  <link rel="stylesheet" href="/modules/todo/client/css/style.css">
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <!-- SCROLLS -->
+  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"-->
+  <!-- load bootstrap -->
+</head>
+<!-- SET THE CONTROLLER -->
+<body class="overallBodyDiv">
+<div class="ToDoApp">
+  <header>
+    <div class="logoHdr">
+      <img src="/modules/todo/client/img/logo.png" alt="logo.png"/>
+    </div>
+  </header>
+  <div class="contentDiv" ng-controller="ToDoController">
+    <div class="headerDiv">
+      <h2 class="headerdivh2 clearfix fleft">Node-Angular ToDo
+      </h2>
+    </div>
+    <div class="ToDoList">
+      <div class="clearfix todohdr">
+        <h2 class="fleft">To Do List</h2>
+        <span class="fleft count">{{ todo.length }}</span>
+        <span class="fleft countcnt">COUNT</span>
+      </div>
+      <div class ="inputdiv">
+        <input id="first_name" type="text" placeholder="Add To Do" ng-model="formData.task_name"/>
+        <img class="fright" src="/modules/todo/client/img/AddIcon.png" alt="AddIcon.png" ng-click="createTodo()"/>
+      </div>
+      <div class="ToDoTbl">
+        <div class="clearfix ToDoRow" ng-repeat="todolist in todo" style="border:1px solid #e3e3e3;">
+
+          <label class="fleft tdhead" ng-hide="todolist.isEditable"><b>{{ todolist.task_name }}</b></label>
+          <div class="clearfix Bforedit" id="icon10_{{todolist._id}}">
+            <a href="#" class="tdIcons">
+              <img id="icon1_{{todolist._id}}" src="/modules/todo/client/img/Edit.png" alt="Edit.png" ng-click="toggleEdit(todolist);"/>
+            </a>
+            <a href="#" class="clearfix tdIcons">
+              <h5 class=""><span class="borderleft" id="icon5_{{todolist._id}}" ng-click="toggleEdit(todolist);">Edit</span></h5>
+            </a>
+            <a href="#" class="tdIcons">
+              <img id="icon2_{{todolist._id}}" src="/modules/todo/client/img/Delete.png" alt="Delete.png"  ng-click="deleteTodo(todolist._id);"/>
+            </a>
+            <a href="#" class="tdIcons" id="icon6_{{todolist._id}}" ng-click="deleteTodo(todolist._id);">
+              <h5>Delete</h5>
+            </a>
+          </div>
+          <div class="clearfix Afteredit" id="icon11_{{todolist._id}}">
+            <input class="fleft inputcls" type="text" id ={{todolist._id}} ng-show="todolist.isEditable" value={{todolist.task_name}}>
+
+            <a href="#" class="tdIcons">
+              <img id="icon3_{{todolist._id}}"
+                   src="/modules/todo/client/img/save.png" alt="save.png" ng-show="todolist.isEditable" ng-click="saveEdit(todolist);"/>
+            </a>
+            <a href="#" class="clearfix tdIcons">
+              <h5 class=""><span id="icon7_{{todolist._id}}" ng-show="todolist.isEditable" ng-click="saveEdit(todolist);">Save</span></h5>
+            </a>
+            <a href="#" class="tdIcons">
+              <img id="icon4_{{todolist._id}}"
+                   src="/modules/todo/client/img/close.png" alt="close.png" ng-show="todolist.isEditable" ng-click="cancelEdit(todolist);">
+            </a>
+            <a href="#" class="tdIcons" id="icon8_{{todolist._id}}" ng-show="todolist.isEditable" ng-click="cancelEdit(todolist);">
+              <h5>Cancel</h5>
+            </a>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

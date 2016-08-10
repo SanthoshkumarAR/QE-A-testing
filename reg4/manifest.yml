@@ -1,0 +1,9 @@
+---
+applications:
+- name: reg4
+  memory: 128M
+  instances: 1
+  services:
+   - reg4-mongodb-0812843005
+  env:
+   - NODE_ENV: cloud-foundry
