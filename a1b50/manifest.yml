@@ -1,0 +1,7 @@
+---
+applications:
+- name: a1b50
+  memory: 1024M
+  instances: 1
+  services:
+   - a1b50-mongodb-0807232129
