@@ -1,0 +1,9 @@
+---
+applications:
+- name: a1b13
+  memory: 128M
+  instances: 1
+  services:
+   - service_name
+  env:
+   - NODE_ENV: cloud-foundry
