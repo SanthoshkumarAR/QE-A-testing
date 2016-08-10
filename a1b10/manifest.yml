@@ -1,0 +1,7 @@
+---
+applications:
+- name: a1b10
+  memory: 128M
+  instances: 1
+  services:
+   - a1b10-redis-0806066039
