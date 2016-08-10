@@ -1,0 +1,7 @@
+---
+applications:
+- name: a1b11
+  memory: 128M
+  instances: 1
+  services:
+   - a1b11-mongodb-0806200298
