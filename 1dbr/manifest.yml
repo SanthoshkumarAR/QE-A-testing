@@ -1,0 +1,7 @@
+---
+applications:
+- name: 1dbr
+  memory: 128M
+  instances: 1
+  services:
+   - 1dbr-mongodb-0820396976
